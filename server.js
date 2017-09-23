@@ -2,7 +2,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
-var mongoose = require("mongoose");
 var routes = require("./config/api-routes");
 var http = require ('http');
 
