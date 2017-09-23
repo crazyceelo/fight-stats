@@ -1,10 +1,12 @@
 const path = require("path");
 
 module.exports = {
+    // targetted file for webpacking
     entry: {
         app: "./app/app.js"
     },
 
+    // generates the filename output file of the entire webpack
     output: {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "public")
@@ -12,6 +14,7 @@ module.exports = {
 
     module: {
         rules: [
+            // allows the use of jsx
             {
                 test: [/\.jsx?$/],
                 loader: "babel-loader",
