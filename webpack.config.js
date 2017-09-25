@@ -1,46 +1,49 @@
+'use strict';
+
 const path = require("path");
+const webpack = require('webpack');
 
-module.exports = {
-    // targetted file for webpacking
-    entry: {
-        app: "./app/app.js"
-    },
+const DIST_DIR = path.resolve(__dirname, "public");
+const SRC_DIR = path.resolve(__dirname, "dev");
 
-    // generates the filename output file of the entire webpack
+const config = {
+    entry: SRC_DIR + "/app/index.js",
     output: {
-        filename: "[name].bundle.js",
-        path: path.resolve(__dirname, "public")
+        path: DIST_DIR + "/app",
+        filename: "bundle.js",
+        publicPath: "/app/"
     },
-
     module: {
-        rules: [
-            // allows the use of jsx
+        loaders: [
+            { 
+                test: /(\.css$)/, 
+                loaders: ['style-loader', 'css-loader']
+            },
             {
-                test: [/\.jsx?$/],
+                test: /\.js?/,
+                include: SRC_DIR,
                 loader: "babel-loader",
                 query: {
-                    presets: ["react", "es2015"]
+                    presets: ["react", "es2015", "stage-2"]
                 }
-            },
-            
-            // allows the use of CSS
-            {
-                test: /\.css$/,
-                use: [
-                    "style-loader",
-                    "css-loader"
-                ]
-            },
-            
-            // allows the app to use images and documents
-            {
-                test: /\.(pdf|png|svg|jpg|gif)$/,
-                use: [
-                    "file-loader"
-                ]
             }
         ]
     },
-
-    devtool: "eval-source-map"
+    plugins: [
+        new webpack.DefinePlugin({
+          'process.env': {
+            'NODE_ENV': JSON.stringify('production')
+          }
+        })
+    ],
+    devServer: {
+        proxy: {
+            '/api': {
+                secure: false,
+                target: 'http://localhost:3000',
+            }
+        }
+    }
 };
+
+module.exports = config;
