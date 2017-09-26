@@ -42,7 +42,8 @@ const config = {
                 secure: false,
                 target: 'http://localhost:3000',
             }
-        }
+        },
+        overlay: true
     }
 };
 
