@@ -63,6 +63,9 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 //Allows express to parse cookie information
 app.use(cookieParser());
 
+//Servers public content such as CSS Javascript required in the HTML files
+app.use(express.static(path.join(__dirname,'public')));
+
 //Creates the sessions table that will authenticate user sessions
 app.use(session({
     //random string that gets hashed to validate a real session and not a spoof

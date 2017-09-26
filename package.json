@@ -5,9 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "webpack --watch",
-    "build": "webpack"
+    "dev": "webpack -d && cp dev/index.html public/index.html && webpack-dev-server --content-base public/ --inline --hot --history-api-fallback",
+    "prod": "webpack -p && cp  dev/index.html public/index.html"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,7 @@
   },
   "homepage": "https://github.com/crazyceelo/fight-stats#readme",
   "dependencies": {
+    "babel-core": "^6.26.0",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
@@ -32,12 +32,22 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
     "request": "^2.82.0",
     "sequelize": "^4.10.3",
     "socket.io": "^2.0.3"
   },
   "devDependencies": {
     "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.7",
     "style-loader": "^0.18.2",
     "webpack": "^3.6.0"
