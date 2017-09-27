@@ -12,6 +12,8 @@ const request = require('request');
 const logger = require('morgan');
 const http = require('http');
 const socket = require('socket.io');
+const cheerio = require('cheerio');
+const mma = require('mma');
 
 //Authentication NPM Dependencies
 const cookieParser = require('cookie-parser');
@@ -41,8 +43,8 @@ const sessionStore = (process.env.PORT ? new MySQLStore({
 
 //Local Dependencies
 const db = require('./models');
-const html = require('./routes/html')(express,passport,db,path);
-const api = require('./routes/api')(express,passport,db,bcrypt,request,io);
+const html = require('./routes/html')(express,passport,db,path,request,cheerio);
+const api = require('./routes/api')(express,passport,db,bcrypt,request,io,mma);
 
 //END Dependencies
 //==================================================================

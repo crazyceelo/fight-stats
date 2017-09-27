@@ -4,13 +4,14 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {HashRouter as Router,Route,Link,Switch, Redirect} from 'react-router-dom';
 
+//Import Components
+import Navbar from './../header/navbar/container';
+
 class Routing extends Component{
     render(){
         return(
             <Router>
-                <div>
-                    <h1>Hello World</h1>
-                </div>
+                    <Route path='/' component={Navbar}/>
             </Router>
         );
     }
