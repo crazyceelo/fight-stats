@@ -1,6 +1,5 @@
 /node_modules
 /src
-/.idea
 /npm-debug.log
 bundle.js
 bundle.js.map
