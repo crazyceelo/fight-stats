@@ -8,6 +8,11 @@ module.exports = (express,passport,db,path)=>{
         .get((req,res,next)=>{
             res.sendFile(path.join(__dirname,'../public/index.html'));
         });
+    
+    router.route('/admin')
+        .get((req,res,next)=>{
+            res.sendFile(path.join(__dirname,'../public/admin.html'));
+    });
 
     return router;
 };
