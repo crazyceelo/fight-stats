@@ -14,4 +14,20 @@ class Footer extends Component{
     }
 }
 
+const mapStateToProps = (state) => {
+    return({
+        data: {
+            // code
+        }
+    })
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return({
+        actions:{
+            // code
+        }
+    })
+}
+
 export default connect()(FooterComp);
