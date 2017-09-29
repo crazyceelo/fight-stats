@@ -7,7 +7,7 @@ import MainSliderComp from './component';
 
 class MainSlider extends Component{
     componentDidMount(){
-        $(function(){ $('.carousel.carousel-slider').carousel({full_width: true}); });
+        $('.slider').slider();
     }
     render(){
         return(

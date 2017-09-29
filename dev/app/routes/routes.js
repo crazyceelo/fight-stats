@@ -14,13 +14,18 @@ class Routing extends Component{
     render(){
         return(
             <Router>
-                <div>
-                    <Route path='/' component={Navbar} />
-                    <Route path='/' component={MainSlider} />
-                    <Route path='/events' component={Sidebar} />
-                    <Route path='/' component={Footer} />
-                    
-                </div>
+                <body>
+                    <header>
+                        <Route path='/' component={Navbar} />
+                    </header>
+                    <main>
+                        <Route path='/' component={MainSlider} />
+                        <Route path='/events' component={Sidebar} />
+                    </main>
+                    <footer className="page-footer grey darken-4">
+                        <Route path='/' component={Footer} />
+                    </footer>
+                </body>
             </Router>
         );
     }
