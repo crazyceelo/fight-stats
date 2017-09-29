@@ -7,7 +7,7 @@ import {HashRouter as Router,Route,Link,Switch, Redirect} from 'react-router-dom
 //Import Components
 import Navbar from './../header/navbar/container';
 import MainSlider from './../body/home/main_slider/container';
-import Footer from './../footer/footer/container';
+import Footer from './../footer/main_footer/container';
 import Sidebar from './../body/sidebar/container';
 
 class Routing extends Component{
