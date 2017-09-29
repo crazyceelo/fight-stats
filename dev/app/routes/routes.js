@@ -12,7 +12,10 @@ class Routing extends Component{
     render(){
         return(
             <Router>
+                <div>
                     <Route path='/' component={Navbar} />
+                    <Route path='/' component={Footer} />
+                </div>
             </Router>
         );
     }
