@@ -22,13 +22,14 @@ module.exports = (express,passport,db,path,request,cheerio)=>{
         
                request(hrefEvent, function(error, response, html){
                     var $ = cheerio.load(html);
-                    var matchup1 = $("tbody tr td p").children("a").first().text();
-                    console.log(matchup1);
-                    console.log(nextEvent);
+                    var matchups = $("tbody tr td p a").text(); // gets the names and match up
+                    var matchupsHref = $("tbody tr td p a").attr("href"); // gets the href of matchup
+                    // var matchups = $("tbody tr td p").children("a").eq(2).text(); gets only matchup
+                    // console.log(matchups);
+                    // console.log(matchupsHref);
                 })
 
             });
         });
-
     return router;
 };
