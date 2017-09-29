@@ -9,6 +9,9 @@ import NavbarComp from './component';
 import {changeUsername, updateForm} from './actions';
 
 class Navbar extends Component{
+    componentDidMount(){
+        $(".button-collapse").sideNav();
+    }
     render(){
         return(
             <NavbarComp data={this.props.data} actions={this.props.actions}/>
