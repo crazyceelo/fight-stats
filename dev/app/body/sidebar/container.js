@@ -8,6 +8,11 @@ import {connect} from 'react-redux';
 import SidebarComp from './component';
 
 class Sidebar extends Component{
+    componentDidMount(){
+        // $('ul.tabs').tabs();
+        // $('.button-collapse').sideNav('show');
+    }
+
     render(){
         return(
             <SidebarComp />

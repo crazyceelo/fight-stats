@@ -14,9 +14,9 @@ class Routing extends Component{
     render(){
         return(
             <Router>
-                <div>
+                <div >
                     <Route path='/' component={Navbar} />
-                    <Route path='/' component={MainSlider} />
+                    <Route exact path='/home' component={MainSlider} />
                     <Route path='/events' component={Sidebar} />
                     <Route path='/' component={Footer} />
                     
