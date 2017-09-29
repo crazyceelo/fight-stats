@@ -7,6 +7,7 @@ import {HashRouter as Router,Route,Link,Switch, Redirect} from 'react-router-dom
 //Import Components
 import Navbar from './../header/navbar/container';
 import Footer from './../footer/footer/container';
+import Sidebar from './../body/sidebar/container';
 
 class Routing extends Component{
     render(){
@@ -14,7 +15,9 @@ class Routing extends Component{
             <Router>
                 <div>
                     <Route path='/' component={Navbar} />
+                    <Route path='/home' component={Sidebar} />
                     <Route path='/' component={Footer} />
+                    
                 </div>
             </Router>
         );
