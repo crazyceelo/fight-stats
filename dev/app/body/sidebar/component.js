@@ -7,7 +7,7 @@ export default (props) => {
         <div className='container'>
             <ul className="collapsible popout" data-collapsible="accordion">
                 <li>
-                    <div className="collapsible-header"><i className="material-icons">Details</i>
+                    <div className="collapsible-header"><i className="material-icons">details</i>
                         <li><span className="fighterName1Spacing">Jim </span> <span className="new badge red badge1Spacing" data-badge-caption=""> 40%</span></li> <span className="versusSpacing">vs</span>
                         <li><span className="fighterName2Spacing">Jon</span> <span className="new badge green badge2Spacing" data-badge-caption=""> 60%</span></li>
                     </div>
@@ -16,7 +16,7 @@ export default (props) => {
                             <table className="responsive-table striped bordered">
                                 <thead>
                                 <tr>
-                                    <th>details</th>
+                                    <th>Details</th>
                                     <th>Jim</th>
                                     <th>Jon</th>
                                 </tr>
