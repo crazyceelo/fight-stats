@@ -1,4 +1,28 @@
-/* .fadein {
-    transform: translateX(0px);
-    opacity: 0;
+/* li span { 
+    position: relative; 
+    left: 20px; 
 } */
+
+.badge1Spacing{
+    position: relative;
+    left: 10px;
+}
+
+.badge2Spacing{
+    position: relative;
+    left: 25px;
+}
+
+.versusSpacing{
+    position: relative;
+    left: 15px;
+}
+
+.fighterName1Spacing{
+    position: relative;
+    left: 5px;
+}
+.fighterName2Spacing{
+    position: relative;
+    left: 20px;
+}
