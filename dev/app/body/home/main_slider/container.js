@@ -17,15 +17,19 @@ class MainSlider extends Component{
 };
 
 const mapStateToProps = (state)=>{
-    data:{
+    return({
+        data:{
 
-    }
+        }
+    })
 };
 
 const mapDispatchToProps = (dispatch)=>{
-    actions:{
-
-    }
+    return({
+        actions:{
+            
+        }
+    });
 };
 
 export default connect(mapStateToProps,mapDispatchToProps)(MainSlider);
