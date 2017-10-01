@@ -13,13 +13,26 @@ export default (props) => {
                     </div>
                     <div className="collapsible-body">
                         <span>
-                            <div>
-                            <form action="#">
-                                <p>
-                                    <input type="checkbox" id="test5" />
-                                    <label for="test5">Red</label>
-                                </p>
-                            </form>
+                            <div className="center-align">
+                                <form action="#">
+                                    <p className="center-align">
+                                        Pick the winner
+                                    </p>
+                                    <ul className="row">
+                                        <li className="col s6">
+                                            <p className="center-align">
+                                                <input name="group1" type="radio" id="test1" />
+                                                <label htmlFor="test1">Jim</label>
+                                            </p>
+                                        </li>
+                                        <li className="col s6">
+                                            <p className="center-align">
+                                                <input name="group1" type="radio" id="test2" />
+                                                <label htmlFor="test2">Jon</label>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </form>
                             </div>
                             <div>
                             <table className="responsive-table striped bordered table1">
