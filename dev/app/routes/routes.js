@@ -9,6 +9,7 @@ import Navbar from './../header/navbar/container';
 import MainSlider from './../body/home/main_slider/container';
 import Footer from './../footer/main_footer/container';
 import Events from './../body/events/container';
+import EventPicks from './../body/eventpicks/container';
 
 class Routing extends Component{
     render(){
@@ -18,6 +19,7 @@ class Routing extends Component{
                     <Route path='/' component={Navbar} />
                     <Route exact path='/home' component={MainSlider} />
                     <Route path='/events' component={Events} />
+                    <Route path='/events' component={EventPicks} />
                     <Route path='/' component={Footer} />
                     
                 </div>

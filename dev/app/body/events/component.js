@@ -192,18 +192,6 @@ export default (props) => {
                     <div className="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
                 </li>
             </ul>
-            <div>
-                <ul className="collection with-header">
-                    <li className="collection-header"><h4>Finalize your picks</h4></li>
-                    <li className="collection-item">Alvin</li>
-                    <li className="collection-item">Alvin</li>
-                    <li className="collection-item">Alvin</li>
-                    <li className="collection-item">Alvin</li>
-                </ul>
-                <a className="waves-effect waves-light btn">Submit</a>
-                <br />
-                <br />
-            </div>
         </div>
     );
 };

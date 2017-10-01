@@ -5,13 +5,13 @@ import React,{Component} from 'react';
 import {connect} from 'react-redux';
 
 // import component
-import SidebarComp from './component';
+import EventPicksComp from './component';
 
-class Sidebar extends Component{
+class EventPicks extends Component{
 
     render(){
         return(
-            <SidebarComp />
+            <EventPicksComp />
         )
     }
 }
@@ -27,9 +27,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return({
         actions: {
-            //code
+            // code
         }
     })
 }
 
-export default connect()(SidebarComp);
+export default connect()(EventPicksComp);
