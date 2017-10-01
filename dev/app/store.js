@@ -9,4 +9,4 @@ import navbarReducer from './header/navbar/reducer.js';
 
 export default createStore(combineReducers({
     navbarReducer
-},applyMiddleware(logger,thunk)));
+}),applyMiddleware(logger,thunk));

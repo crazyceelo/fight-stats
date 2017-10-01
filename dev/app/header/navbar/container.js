@@ -6,11 +6,10 @@ import {connect} from 'react-redux';
 
 //Import local dependencies
 import NavbarComp from './component';
-import {changeUsername, updateForm} from './actions';
 
 class Navbar extends Component{
     componentDidMount(){
-        $(".button-collapse").sideNav();
+        $(".button-collapse").sideNav();        
     }
     render(){
         return(
@@ -30,12 +29,7 @@ const mapStateToProps = (state)=>{
 const mapDispatchToProps = (dispatch)=>{
     return({
         actions:{
-            changeUsername:(newName)=>{
-                dispatch(changeUsername(newName));
-            },
-            updateForm: (event)=>{
-                dispatch(updateForm(event));
-            }
+
         }
     });
 };
