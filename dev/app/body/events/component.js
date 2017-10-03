@@ -21,13 +21,13 @@ export default (props) => {
                                     <ul className="row">
                                         <li className="col s6">
                                             <p className="center-align">
-                                                <input name="group1" type="radio" id="test1" />
+                                                <input name="group1" type="radio" id="test1" value="Jim"/>
                                                 <label htmlFor="test1">Jim</label>
                                             </p>
                                         </li>
                                         <li className="col s6">
                                             <p className="center-align">
-                                                <input name="group1" type="radio" id="test2" />
+                                                <input name="group1" type="radio" id="test2" value="Jon"/>
                                                 <label htmlFor="test2">Jon</label>
                                             </p>
                                         </li>

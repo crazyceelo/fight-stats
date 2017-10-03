@@ -5,13 +5,14 @@ import React,{Component} from 'react';
 import {connect} from 'react-redux';
 
 // import component
-import SidebarComp from './component';
+import EventsComp from './component';
+import {pickFighter} from './actions';
 
-class Sidebar extends Component{
+class Events extends Component{
 
     render(){
         return(
-            <SidebarComp />
+            <EventsComp data={this.props.data} actions={this.props.actions} />
         )
     }
 }
@@ -19,7 +20,7 @@ class Sidebar extends Component{
 const mapStateToProps = (state) => {
     return({
         data: {
-            // code
+            fightPicks: state.eventsReducer
         }
     })
 }
@@ -27,9 +28,11 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return({
         actions: {
-            //code
+            pickFighter: (fighterName)=>{
+                dispatch(pickFighter(fighterName));
+            }
         }
     })
 }
 
-export default connect()(SidebarComp);
+export default connect(mapStateToProps, mapDispatchToProps)(EventsComp);
