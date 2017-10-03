@@ -7,14 +7,15 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="/assets/materialize/css/materialize.css">
         <link rel='stylesheet' href='/assets/main/css/main.css'>
+        <link rel="shortcut icon" href="/assets/main/images/logo.png" type="image/x-icon">
     </head>
 
     <body>
-        <div id="app"></div>
-
+        <div class='materialize-enabled' id='app'/>
         <!-- webpack targets this script for entry and output -->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="/assets/materialize/js/materialize.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>        
         <script src="/app/bundle.js"></script>
         <script src="/assets/main/scripts/main.js"></script>
         <!-- front end framework scripts go here -->

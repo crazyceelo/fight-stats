@@ -4,7 +4,7 @@ import React from 'react';
 
 export default (props) => {
     return(
-        <footer className="page-footer blue darken-3">
+        <div>
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
@@ -27,6 +27,6 @@ export default (props) => {
             © 2017 Copyright Text
             </div>
           </div>
-        </footer>
+        </div>
     );
 };

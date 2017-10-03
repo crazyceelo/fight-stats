@@ -7,7 +7,7 @@ import MainSliderComp from './component';
 
 class MainSlider extends Component{
     componentDidMount(){
-        $(function(){ $('.carousel.carousel-slider').carousel({full_width: true}); });
+        $('.slider').slider();
     }
     render(){
         return(
@@ -17,15 +17,19 @@ class MainSlider extends Component{
 };
 
 const mapStateToProps = (state)=>{
-    data:{
+    return({
+        data:{
 
-    }
+        }
+    })
 };
 
 const mapDispatchToProps = (dispatch)=>{
-    actions:{
-
-    }
+    return({
+        actions:{
+            
+        }
+    });
 };
 
 export default connect(mapStateToProps,mapDispatchToProps)(MainSlider);
