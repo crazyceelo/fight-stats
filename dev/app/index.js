@@ -12,7 +12,7 @@ import Routing from './routes/routes';
 render(
     <Provider store={store}>
        <Routing />
-     </Provider>
+    </Provider>
 , window.document.getElementById('app'));
 
 if(module.hot){

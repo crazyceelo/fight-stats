@@ -12,3 +12,4 @@ export default createStore(combineReducers({
     navbarReducer,
     eventsReducer
 },applyMiddleware(logger,thunk)));
+

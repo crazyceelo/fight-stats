@@ -15,13 +15,32 @@ class Routing extends Component{
     render(){
         return(
             <Router>
-                <div >
-                    <Route path='/' component={Navbar} />
-                    <Route exact path='/home' component={MainSlider} />
-                    <Route path='/events' component={Events} />
-                    <Route path='/events' component={EventPicks} />
-                    <Route path='/' component={Footer} />
-                    
+                <div className='materialize-enabled'>
+                    <Route path="/">
+                        <header>
+                            <Navbar />
+                        </header>
+                    </Route>
+                    <Switch>
+                        <Route exact path='/'>
+                            <main>
+                                <Route path='/' component={MainSlider} />
+                                <Route path='/events' component={Events} />
+                                <Route path='/events' component={EventPicks} />
+                            </main>
+                        </Route>
+                        <Route  exact path='/events'>
+                            <main>
+                                <Route path='/events' component={Events} />
+                                <Route path='/events' component={EventPicks} />
+                            </main>
+                        </Route>
+                    </Switch>
+                    <Route path="/">
+                        <footer className="page-footer grey darken-4">
+                            <Footer />
+                        </footer>
+                    </Route>
                 </div>
             </Router>
         );
