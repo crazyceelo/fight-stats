@@ -11,7 +11,7 @@ class EventPicks extends Component{
 
     render(){
         return(
-            <EventPicksComp />
+            <EventPicksComp data={this.props.data} actions={this.props.actions}/>
         )
     }
 }
@@ -19,7 +19,7 @@ class EventPicks extends Component{
 const mapStateToProps = (state) => {
     return({
         data: {
-            // code
+            eventsComp: state.eventsReducer
         }
     })
 }
@@ -32,4 +32,4 @@ const mapDispatchToProps = (dispatch) => {
     })
 }
 
-export default connect()(EventPicksComp);
+export default connect(mapStateToProps,mapDispatchToProps)(EventPicksComp);

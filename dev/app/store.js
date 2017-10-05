@@ -11,5 +11,5 @@ import eventsReducer from './body/events/reducer.js';
 export default createStore(combineReducers({
     navbarReducer,
     eventsReducer
-},applyMiddleware(logger,thunk)));
+}),{},applyMiddleware(logger,thunk));
 

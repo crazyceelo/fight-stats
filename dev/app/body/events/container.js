@@ -28,8 +28,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return({
         actions: {
-            pickFighter: (fighterName)=>{
-                dispatch(pickFighter(fighterName));
+            pickFighter: (event)=>{
+                dispatch(pickFighter(event));
             }
         }
     })
