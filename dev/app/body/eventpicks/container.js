@@ -6,6 +6,7 @@ import {connect} from 'react-redux';
 
 // import component
 import EventPicksComp from './component';
+import {handleSubmit} from './actions';
 
 class EventPicks extends Component{
 
