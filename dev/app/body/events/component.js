@@ -8,8 +8,8 @@ export default (props) => {
             <ul className="collapsible popout" data-collapsible="accordion">
                 <li>
                     <div className="collapsible-header"><i className="material-icons">details</i>
-                        <li><span className="fighterName1Spacing">Jim </span> <span className="new badge red badge1Spacing" data-badge-caption=""> 40%</span></li> <span className="versusSpacing">vs</span>
-                        <li><span className="fighterName2Spacing">Jon</span> <span className="new badge green badge2Spacing" data-badge-caption=""> 60%</span></li>
+                        <div><span className="fighterName1Spacing">Jim </span> <span className="new badge red badge1Spacing" data-badge-caption=""> 40%</span></div> <span className="versusSpacing">vs</span>
+                        <div><span className="fighterName2Spacing">Jon</span> <span className="new badge green badge2Spacing" data-badge-caption=""> 60%</span></div>
                     </div>
                     <div className="collapsible-body">
                         <span>
@@ -18,7 +18,7 @@ export default (props) => {
                                     <p className="center-align">
                                         Pick the winner
                                     </p>
-                                    <ul className="row">
+                                    <div className="row">
                                         <li className="col s6">
                                             <p className="center-align">
                                                 <input name="group1" type="radio" data-event-id='1' data-event-name='Jim Vs Jon' id="test1" value="Jim" checked={props.data.fightPicks.picks.indexOf('Jim') !== -1}/>
@@ -31,7 +31,7 @@ export default (props) => {
                                                 <label htmlFor="test2">Jon</label>
                                             </p>
                                         </li>
-                                    </ul>
+                                    </div>
                                 </form>
                             </div>
                             <div>
@@ -185,8 +185,8 @@ export default (props) => {
                 </li>
                 <li>
                     <div className="collapsible-header"><i className="material-icons">details</i>
-                        <li><span className="fighterName1Spacing">Bryan </span> <span className="new badge red badge1Spacing" data-badge-caption=""> 40%</span></li> <span className="versusSpacing">vs</span>
-                        <li><span className="fighterName2Spacing">Carlos</span> <span className="new badge green badge2Spacing" data-badge-caption=""> 60%</span></li>
+                        <div><span className="fighterName1Spacing">Bryan </span> <span className="new badge red badge1Spacing" data-badge-caption=""> 40%</span></div> <span className="versusSpacing">vs</span>
+                        <div><span className="fighterName2Spacing">Carlos</span> <span className="new badge green badge2Spacing" data-badge-caption=""> 60%</span></div>
                     </div>
                     <div className="collapsible-body">
                         <span>
