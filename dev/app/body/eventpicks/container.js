@@ -21,8 +21,8 @@ const mapStateToProps = (state) => {
         data: {
             eventsComp: state.eventsReducer
         }
-    })
-}
+    });
+};
 
 const mapDispatchToProps = (dispatch) => {
     return({
@@ -31,7 +31,7 @@ const mapDispatchToProps = (dispatch) => {
                 dispatch(handleSubmit(event));
             }
         }
-    })
-}
+    });
+};
 
 export default connect(mapStateToProps,mapDispatchToProps)(EventPicksComp);

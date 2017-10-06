@@ -15,7 +15,7 @@ export default (props) => {
                     })}
                 </ul>
                 <div className="center-align">
-                    <button  className="waves-effect waves-light btn">Submit</button>
+                    <button className="waves-effect waves-light btn">Submit</button>
                 </div>
                 <br />
             </form>
