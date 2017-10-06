@@ -5,7 +5,7 @@ import React from 'react';
 export default (props) => {
     return(
         <div className="container">
-            <form>
+            <form onSubmit={props.actions.handleSubmit}>
                 <ul className="collection with-header">
                     <li className="collection-header"><h4>Finalize your picks</h4></li>
                     {props.data.eventsComp.fighterData.map((match, index)=>{
@@ -15,7 +15,7 @@ export default (props) => {
                     })}
                 </ul>
                 <div className="center-align">
-                    <a className="waves-effect waves-light btn">Submit</a>
+                    <button  className="waves-effect waves-light btn">Submit</button>
                 </div>
                 <br />
             </form>

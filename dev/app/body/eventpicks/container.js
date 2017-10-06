@@ -27,7 +27,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return({
         actions: {
-            // code
+            handleSubmit: (event)=>{
+                dispatch(handleSubmit(event));
+            }
         }
     })
 }
