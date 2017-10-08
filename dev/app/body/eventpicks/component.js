@@ -10,7 +10,7 @@ export default (props) => {
                     <li className="collection-header"><h4>Finalize your picks</h4></li>
                     {props.data.eventsComp.fighterData.map((match, index)=>{
                         return(
-                            <li key={'event-' + match.event_id} className="collection-item">{match.event_name} | Your Fighter: {match.fighter} </li>
+                            <li key={'event-' + match.event_id} className="collection-item" data-eventpicks-fighter={match.fighter} data-eventpicks-event_id={match.event_id} data-eventpicks-event_name={match.event_name} >{match.event_name} | Your Fighter: {match.fighter} </li>
                         )
                     })}
                 </ul>
