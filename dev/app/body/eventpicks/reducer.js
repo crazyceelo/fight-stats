@@ -1,13 +1,13 @@
 'use strict';
 
 export default (state = {
-    pick: []
+    picks: []
 }, action) => {
     switch(action.type){
-        case 'SUBMIT_PICKS':
-            state={
+        case 'SUBMIT_PICKS': 
+        state={
                 ...state,
-                pick: action.payload
+                picks: action.payload
             }
         break;
     }
