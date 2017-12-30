@@ -11,3 +11,9 @@ export const pickFighter = (event)=> {
         }
     });
 };
+
+export const getMmaData = ()=>{
+    return({
+        
+    })
+}
