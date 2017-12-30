@@ -8,7 +8,9 @@ export default (props) => {
             <ul className="collapsible popout" data-collapsible="accordion">
                 <li>
                     <div className="collapsible-header"><i className="material-icons">details</i>
+                        {/* fighter name api goes here */}
                         <div><span className="fighterName1Spacing">Jim </span> <span className="new badge red badge1Spacing" data-badge-caption=""> 40%</span></div> <span className="versusSpacing">vs</span>
+                        {/* other fighter name api goes here */}
                         <div><span className="fighterName2Spacing">Jon</span> <span className="new badge green badge2Spacing" data-badge-caption=""> 60%</span></div>
                     </div>
                     <div className="collapsible-body">
@@ -21,12 +23,14 @@ export default (props) => {
                                     <div className="row">
                                         <li className="col s6">
                                             <p className="center-align">
+                                                {/* more api's here */}
                                                 <input name="group1" type="radio" data-event-id='1' data-event-name='Jim Vs Jon' id="test1" value="Jim" checked={props.data.fightPicks.picks.indexOf('Jim') !== -1}/>
                                                 <label htmlFor="test1">Jim</label>
                                             </p>
                                         </li>
                                         <li className="col s6">
                                             <p className="center-align">
+                                                {/* more api's here */}
                                                 <input name="group1" type="radio" id="test2" data-event-id='1' data-event-name='Jim Vs Jon' value="Jon" checked={props.data.fightPicks.picks.indexOf('Jon') !== -1}/>
                                                 <label htmlFor="test2">Jon</label>
                                             </p>
@@ -38,6 +42,7 @@ export default (props) => {
                             <table className="responsive-table striped bordered table1">
                                 <thead>
                                     <tr>
+                                        {/* api here */}
                                         <th>Details</th>
                                         <th>Jim</th>
                                         <th>Jon</th>
