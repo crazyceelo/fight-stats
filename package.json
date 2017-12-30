@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/crazyceelo/fight-stats#readme",
   "dependencies": {
+    "axios": "^0.17.1",
     "babel-core": "^6.26.0",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
