@@ -13,7 +13,12 @@ export const pickFighter = (event)=> {
 };
 
 export const getMmaData = ()=>{
-    return({
+    return dispatch => axios({
+        url: '/fighters/:fighter_name',
+        method:'GET',
+        responseType: 'json',
+        data: data
+    }).then((response)=>{
         
     })
 }
